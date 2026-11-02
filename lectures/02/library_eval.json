@@ -1,0 +1,384 @@
+{
+  "before": [
+    {
+      "question": "週末の開室時間は？",
+      "raw": "{\"answer\": \"火曜から土曜で、10時から18時です\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "開室時間を始まりから終わりまで教えてください",
+      "raw": "{\"answer\": \"10時から18時\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "何時から何時まで利用できますか",
+      "raw": "{\"answer\": \"10時から18時\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "貸出の上限冊数と日数は？",
+      "raw": "{\"answer\": \"14日間\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "本を借りられる冊数と日数を答えてください",
+      "raw": "{\"answer\": \"14日間\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "貸出は最大何冊で何日間ですか",
+      "raw": "{\"answer\": \"14日間\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "図書室がある場所は？",
+      "raw": "{\"answer\": \"駅前市民センターの2階\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "図書室はどの建物の何階ですか",
+      "raw": "{\"answer\": \"駅前市民センターの2階\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "駅前の図書室の所在地を教えてください",
+      "raw": "{\"answer\": \"駅前市民センターの2階\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "何回までいつ延長できますか",
+      "raw": "{\"answer\": \"1回\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "借りた本は期限内に何回延長できますか",
+      "raw": "{\"answer\": \"1\", \"needs_review\": \"false\"}",
+      "format_ok": false,
+      "format_reason": "wrong_type",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "貸出期限を延長する条件を教えてください",
+      "raw": "{\"answer\": \"貸出期限の延長は、返却期限内に1回だけ手続きできます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "本を返す箱の色と場所は？",
+      "raw": "{\"answer\": \"赤い返却ボックス\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "本を返す場所と箱の色を教えてください",
+      "raw": "{\"answer\": \"図書室入口の赤い返却ボックス\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "返却用の赤い箱はどこですか",
+      "raw": "{\"answer\": \"図書室入口の赤い返却ボックス\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "図書室で飲食できますか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "館内にコピー機はありますか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "子ども向けの読み聞かせはありますか",
+      "raw": "{\"answer\": \"なし\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "本を取り寄せることはできますか",
+      "raw": "{\"answer\": \"はい\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "臨時休室はいつですか",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "図書室に駐車場はありますか",
+      "raw": "{\"answer\": \"なし\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    }
+  ],
+  "after": [
+    {
+      "question": "週末の開室時間は？",
+      "raw": "{\"answer\": \"開室日は火曜から土曜で、時間は10時から18時です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "開室時間を始まりから終わりまで教えてください",
+      "raw": "{\"answer\": \"開室日は火曜から土曜で、時間は10時から18時です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "何時から何時まで利用できますか",
+      "raw": "{\"answer\": \"開室日は火曜から土曜で、時間は10時から18時です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "貸出の上限冊数と日数は？",
+      "raw": "{\"answer\": \"本は一人3冊まで、14日間借りられます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "本を借りられる冊数と日数を答えてください",
+      "raw": "{\"answer\": \"本は一人3冊まで、14日間借りられます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "貸出は最大何冊で何日間ですか",
+      "raw": "{\"answer\": \"本は一人3冊まで、14日間借りられます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "図書室がある場所は？",
+      "raw": "{\"answer\": \"図書室は駅前市民センターの2階にあります。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "図書室はどの建物の何階ですか",
+      "raw": "{\"answer\": \"図書室は駅前市民センターの2階にあります。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "駅前の図書室の所在地を教えてください",
+      "raw": "{\"answer\": \"図書室は駅前市民センターの2階にあります。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "何回までいつ延長できますか",
+      "raw": "{\"answer\": \"貸出期間の延長は返却期限内に1回だけ手続きできます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "借りた本は期限内に何回延長できますか",
+      "raw": "{\"answer\": \"貸出期間の延長は返却期限内に1回だけ手続きできます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "貸出期限を延長する条件を教えてください",
+      "raw": "{\"answer\": \"貸出期間の延長は返却期限内に1回だけ手続きできます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "本を返す箱の色と場所は？",
+      "raw": "{\"answer\": \"返却は図書室入口の赤い返却ボックスに入れてください。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "本を返す場所と箱の色を教えてください",
+      "raw": "{\"answer\": \"返却は図書室入口の赤い返却ボックスに入れてください。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "返却用の赤い箱はどこですか",
+      "raw": "{\"answer\": \"返却は図書室入口の赤い返却ボックスに入れてください。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "図書室で飲食できますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "館内にコピー機はありますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "子ども向けの読み聞かせはありますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "本を取り寄せることはできますか",
+      "raw": "{\"answer\": \"返却は図書室入口の赤い返却ボックスに入れてください。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "臨時休室はいつですか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "図書室に駐車場はありますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    }
+  ]
+}
