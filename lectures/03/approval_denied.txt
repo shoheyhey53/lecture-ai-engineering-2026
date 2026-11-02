@@ -1,0 +1,8 @@
+[model] gemini-3.5-flash-lite
+保存の確認: save_learning_log({'title': 'テスト用学習記録', 'content': 'LoRAの学習で低ランク行列を使う'})
+この内容を保存しますか？ [y/N] 学習記録の保存は利用者の方の承認が必要なため、今回はキャンセルされました。保存をご希望の場合は、改めてお知らせください。
+
+--- trace ---
+[tool call]   save_learning_log({'title': 'テスト用学習記録', 'content': 'LoRAの学習で低ランク行列を使う'})
+[tool return] save_learning_log -> The tool call was denied.…
+[usage] RunUsage(cost=Decimal('0.000236'), details={'text_prompt_tokens': 570}, input_text_tokens=570, input_tokens=570, output_tokens=26, requests=1)
