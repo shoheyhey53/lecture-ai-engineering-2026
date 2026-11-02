@@ -12,3 +12,9 @@ learning_log/
 
 # macOS
 .DS_Store
+
+# 個人の学習記録を追跡しない
+learning_log/
+
+# ADK の実行時データ
+.adk/
