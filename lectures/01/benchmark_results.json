@@ -1,0 +1,149 @@
+{
+  "created_at_utc": "2026-11-02T05:10:51.404939+00:00",
+  "results": [
+    {
+      "model": "gemini-3.5-flash-lite",
+      "question": "LoRAとは何ですか？ 100字以内で説明してください。",
+      "attempt": 1,
+      "seconds": 3.695,
+      "status": "ok",
+      "answer": "LoRA（Low-Rank Adaptation）とは、大規模言語モデルなどのAIを追加学習させる際、全パラメータではなく極一部のパラメータだけを効率的に更新する手法です。少ない計算資源とメモリで、短時間かつ低コストに特定用途へ特化させることができます。（99字）",
+      "input_tokens": 17,
+      "output_tokens": 61,
+      "thoughts_tokens": null,
+      "total_tokens": 78
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "question": "LoRAとは何ですか？ 100字以内で説明してください。",
+      "attempt": 2,
+      "seconds": 0.965,
+      "status": "ok",
+      "answer": "LoRA（Low-Rank Adaptation）とは、大規模言語モデルなどの追加学習を効率化する手法です。モデル全体の重みを更新するのではなく、少数の低ランクなパラメータだけを追加・学習させることで、メモリ消費や計算コストを大幅に削減します。（98文字）",
+      "input_tokens": 17,
+      "output_tokens": 59,
+      "thoughts_tokens": null,
+      "total_tokens": 76
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "question": "LoRAとは何ですか？ 100字以内で説明してください。",
+      "attempt": 3,
+      "seconds": 2.511,
+      "status": "ok",
+      "answer": "LoRA（Low-Rank Adaptation）とは、AIモデル全体の重みを更新せず、一部の小さなパラメータだけを追加・学習させる技術です。元のモデルを保持したまま効率よく低コストで追加学習や特化型AIの開発が可能です。（97文字）",
+      "input_tokens": 17,
+      "output_tokens": 56,
+      "thoughts_tokens": null,
+      "total_tokens": 73
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "question": "AIE2026の講座の宿題にある3レベルとは何ですか？ 100字以内で答えてください。",
+      "attempt": 1,
+      "seconds": 3.684,
+      "status": "ok",
+      "answer": "AIE2026の宿題における3レベルとは、個人の習熟度や目的に合わせ設定された「基礎」「応用」「発展」の段階です。受講者が自身のレベルや理解度に応じて最適な課題を選択し、無理なくスキルアップできるよう設計されています。（99文字）",
+      "input_tokens": 30,
+      "output_tokens": 62,
+      "thoughts_tokens": null,
+      "total_tokens": 92
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "question": "AIE2026の講座の宿題にある3レベルとは何ですか？ 100字以内で答えてください。",
+      "attempt": 2,
+      "seconds": 4.277,
+      "status": "ok",
+      "answer": "AIE2026の宿題における3レベルとは、個人の目標やスキルに応じた「基礎」「標準」「発展」の3段階の課題を指します。受講者が自身の習熟度や負荷に合わせて最適なレベルを選択し、無理なく学習効果を高める仕組みです。（96文字）",
+      "input_tokens": 30,
+      "output_tokens": 65,
+      "thoughts_tokens": null,
+      "total_tokens": 95
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "question": "AIE2026の講座の宿題にある3レベルとは何ですか？ 100字以内で答えてください。",
+      "attempt": 3,
+      "seconds": 1.114,
+      "status": "ok",
+      "answer": "AIE2026の講座における3レベルの宿題とは、受講生の習熟度や目的に合わせ、「基礎」「応用」「発展」など難易度別に用意された課題のことです。自身の理解度や目標に応じて最適なレベルを選択し、無理なくスキルアップを目指します。（97文字）",
+      "input_tokens": 30,
+      "output_tokens": 66,
+      "thoughts_tokens": null,
+      "total_tokens": 96
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "question": "LoRAとは何ですか？ 100字以内で説明してください。",
+      "attempt": 1,
+      "seconds": 1.177,
+      "status": "ok",
+      "answer": "LoRAは、巨大なAIモデルの全パラメータを更新する代わりに、一部の小さな行列のみを追加・学習させる手法です。計算コストを劇的に抑えつつ、特定の画風やキャラクターに特化したモデルを効率的に作成できます。",
+      "input_tokens": 17,
+      "output_tokens": 52,
+      "thoughts_tokens": null,
+      "total_tokens": 69
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "question": "LoRAとは何ですか？ 100字以内で説明してください。",
+      "attempt": 2,
+      "seconds": 0.889,
+      "status": "ok",
+      "answer": "LoRA（Low-Rank Adaptation）は、巨大なAIモデルの全パラメータを更新する代わりに、一部の小さな行列のみを学習させる手法です。計算コストを抑えつつ、特定のタスクやスタイルに効率よく追加学習できます。",
+      "input_tokens": 17,
+      "output_tokens": 52,
+      "thoughts_tokens": null,
+      "total_tokens": 69
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "question": "LoRAとは何ですか？ 100字以内で説明してください。",
+      "attempt": 3,
+      "seconds": 1.059,
+      "status": "ok",
+      "answer": "LoRAは、巨大なAIモデルの全パラメータを更新する代わりに、一部の小さな行列のみを追加・学習させる手法です。計算コストを抑えつつ、特定の画風やキャラクターに特化したモデルを効率的に作成できる技術です。（98文字）",
+      "input_tokens": 17,
+      "output_tokens": 56,
+      "thoughts_tokens": null,
+      "total_tokens": 73
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "question": "AIE2026の講座の宿題にある3レベルとは何ですか？ 100字以内で答えてください。",
+      "attempt": 1,
+      "seconds": 0.866,
+      "status": "ok",
+      "answer": "AIE2026の講座における「3レベル」とは、学習の深さや習熟度を示す段階のことです。具体的には、基礎的な知識の習得（Level 1）、応用的なスキルの実践（Level 2）、そして自律的な課題解決や創造（Level 3）を指します。",
+      "input_tokens": 30,
+      "output_tokens": 69,
+      "thoughts_tokens": null,
+      "total_tokens": 99
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "question": "AIE2026の講座の宿題にある3レベルとは何ですか？ 100字以内で答えてください。",
+      "attempt": 2,
+      "seconds": 1.037,
+      "status": "ok",
+      "answer": "AIE2026の講座における「3レベル」とは、学習の深さや習熟度を指す指標です。一般的に、知識の理解を問う「基礎（Level 1）」、応用力を測る「実践（Level 2）」、独自性を求める「応用・発展（Level 3）」の構成を指します。",
+      "input_tokens": 30,
+      "output_tokens": 76,
+      "thoughts_tokens": null,
+      "total_tokens": 106
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "question": "AIE2026の講座の宿題にある3レベルとは何ですか？ 100字以内で答えてください。",
+      "attempt": 3,
+      "seconds": 0.743,
+      "status": "ok",
+      "answer": "AIE2026の講座における「3レベル」とは、学習の深さや対象範囲を示す指標です。具体的には、基礎的な概念を学ぶ「レベル1」、実用的な応用力を養う「レベル2」、専門的かつ高度な研究・実装を行う「レベル3」を指します。",
+      "input_tokens": 30,
+      "output_tokens": 66,
+      "thoughts_tokens": null,
+      "total_tokens": 96
+    }
+  ]
+}
