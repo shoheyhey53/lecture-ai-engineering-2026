@@ -5,6 +5,9 @@
 """
 
 import json
+import random
+import uuid
+from datetime import datetime, timezone
 from functools import cache
 from pathlib import Path
 
@@ -77,3 +80,27 @@ def get_lecture_summary(lecture: int) -> str:
         available = sorted(p.stem for p in (DATA_DIR / "lectures").glob("*.md"))
         return f"第{lecture}回の要点はまだありません。用意されている回: {', '.join(available)}"
     return path.read_text(encoding="utf-8")
+
+
+def make_quiz(lecture: int) -> str:
+    """指定した講義回の確認問題を1問作る。問題の出題を頼まれたときに使う。"""
+    entries = [entry for entry in load_glossary() if entry["lecture"] == lecture]
+    if not entries:
+        return f"第{lecture}回の用語は見つかりませんでした。"
+    entry = random.choice(entries)
+    return json.dumps({"question": f"「{entry['term']}」の意味は？", "answer": entry["definition"]}, ensure_ascii=False)
+
+
+def save_learning_log(title: str, content: str) -> str:
+    """学習の記録を保存する。明示的に記録の保存を求められたときに使う。
+
+    実行前には利用者の承認が必要。title は記録の題名、content は学んだ内容。
+    """
+    directory = Path(__file__).resolve().parent.parent / "learning_log"
+    directory.mkdir(exist_ok=True)
+    path = directory / f"{uuid.uuid4().hex}.json"
+    data = {"title": title, "content": content, "created_at": datetime.now(timezone.utc).isoformat()}
+    with path.open("x", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    return f"学習記録を保存しました: {path.relative_to(directory.parent)}"
