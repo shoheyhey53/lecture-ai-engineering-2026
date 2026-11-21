@@ -98,6 +98,20 @@ def search_materials(query: str) -> str:
         return json.dumps({"error": api_error_message(e.code), "results": []}, ensure_ascii=False)
 
 
+def search_materials_neighbors(query: str) -> str:
+    """講義資料を検索し、検索結果と同じ資料の前後ページを引用情報付きで返す。"""
+    import sqlite3
+    from google.genai.errors import APIError
+    from app.retrieval import search_with_neighbors
+
+    try:
+        return json.dumps({"results": search_with_neighbors(query)}, ensure_ascii=False)
+    except (ValueError, OSError, sqlite3.Error) as e:
+        return json.dumps({"error": str(e), "results": []}, ensure_ascii=False)
+    except APIError as e:
+        return json.dumps({"error": api_error_message(e.code), "results": []}, ensure_ascii=False)
+
+
 def browse_tree(node_id: str | None = None) -> str:
     """目次とページの先頭文を返す。ページIDを指定すると全文を返す。
 
@@ -122,6 +136,20 @@ def search_graph(query: str) -> str:
 
     try:
         return json.dumps(search(query), ensure_ascii=False)
+    except (ValueError, OSError, sqlite3.Error) as e:
+        return json.dumps({"error": str(e)}, ensure_ascii=False)
+    except APIError as e:
+        return json.dumps({"error": api_error_message(e.code)}, ensure_ascii=False)
+
+
+def search_graph_multi(queries: list[str]) -> str:
+    """異なる観点の検索語を1〜3個指定し、Graph検索のページを統合して返す。"""
+    import sqlite3
+    from google.genai.errors import APIError
+    from app.retrieval import search_graph_multi as search
+
+    try:
+        return json.dumps(search(queries), ensure_ascii=False)
     except (ValueError, OSError, sqlite3.Error) as e:
         return json.dumps({"error": str(e)}, ensure_ascii=False)
     except APIError as e:

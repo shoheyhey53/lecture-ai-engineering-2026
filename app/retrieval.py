@@ -138,6 +138,13 @@ def search(query: str) -> list[dict]:
         return [dict(row) for row in rows]
 
 
+def search_with_neighbors(query: str) -> list[dict]:
+    """通常検索の上位ページに、同一資料の前後1ページを追加する。"""
+    from app.nearby import expand_neighbors
+
+    return expand_neighbors(search(query), load_pages())
+
+
 def search_graph(query: str) -> dict:
     """ベクトル検索を入口に、前後ページと共通用語で候補を広げる。"""
     pages = {page["page_id"]: page for page in load_pages(RAG_SOURCE)}
@@ -183,6 +190,25 @@ def search_graph(query: str) -> dict:
     expanded = [candidate for _, candidate in sorted(candidates.values())]
     return {"seeds": results, "expanded": expanded[:max(0, GRAPH_MAX_RESULTS - len(results))],
             "max_hops": GRAPH_HOPS}
+
+
+def search_graph_multi(queries: list[str]) -> dict:
+    """複数の検索語でGraphを引き、入口を優先してページを重複なく統合する。"""
+    if not 1 <= len(queries) <= 3 or any(not isinstance(q, str) or not q.strip() for q in queries):
+        raise ValueError("検索語を1〜3個、空でない文字列で指定してください。")
+    graphs = [(query, search_graph(query)) for query in queries]
+    merged = {}
+    for role in ("seeds", "expanded"):
+        for query, graph in graphs:
+            for page in graph[role]:
+                page_id = page["page_id"]
+                if page_id not in merged:
+                    merged[page_id] = {**page, "retrieval_role": role, "queries": [query]}
+                elif query not in merged[page_id]["queries"]:
+                    merged[page_id]["queries"].append(query)
+    results = list(merged.values())
+    return {"results": results[:GRAPH_MAX_RESULTS], "queries": queries,
+            "candidate_count": len(results), "max_results": GRAPH_MAX_RESULTS}
 
 
 
