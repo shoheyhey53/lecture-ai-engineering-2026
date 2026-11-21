@@ -1,0 +1,13 @@
+検索語: LoRA QLoRA 固定 学習
+この照合は回答生成後に同じ検索語で検索を再実行したもの。最初の上位5件を前後拡張した。
+search_hit lec02-main-p052 LoRA と QLoRA
+search_hit lec02-main-p051 PEFT
+search_hit lec02-main-p060 QLoRA 演習
+search_hit lec02-main-p061 演習の進め方と提出物
+search_hit lec02-main-p047 知識の追加は RAG
+neighbor lec02-main-p053 (from p052)
+neighbor lec02-main-p050 (from p051)
+neighbor lec02-main-p059 (from p060)
+neighbor lec02-main-p062 (from p061)
+neighbor lec02-main-p046 (from p047)
+neighbor lec02-main-p048 (from p047)
