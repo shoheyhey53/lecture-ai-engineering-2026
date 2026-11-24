@@ -1,0 +1,14 @@
+[server] glossary: コマンドで起動（uv run python -m app.mcp_server）
+[server] fetch: コマンドで起動（uvx mcp-server-fetch==2026.11.11 --no-readability-js）
+[server] aws: URL に接続（https://knowledge-mcp.global.api.aws）
+[model] gemini-3.5-flash-lite
+[tools] MCP サーバー（app/mcp_servers.json）
+Amazon S3のバージョニングとは、1つのバケット内で同じオブジェクトの複数のバリアント（世代）を保持し、上書きや削除からデータを保護できる機能です。
+予期せぬ操作ミスやアプリケーションの不具合によるデータの損失を防ぎ、過去のバージョンを簡単に復元できるようにします。
+
+--- trace ---
+[tool call]   aws_aws___search_documentation({'search_phrase': 'Amazon S3 バージョニング 概要', 'topics': ['general']})
+[tool return] aws_aws___search_documentation -> {'content': {'result': [{'rank_order': 1, 'title': 'querying-aws-s3', 'skill_description': 'Queries S3 object metadata, …
+[tool call]   aws_aws___search_documentation({'search_phrase': 'Using versioning S3 developer guide', 'topics': ['general']})
+[tool return] aws_aws___search_documentation -> {'content': {'result': [{'rank_order': 1, 'title': 'Working with Amazon S3 Object Versions and the AWS SDK for .NET | AW…
+[usage] 入力 11,257 tokens / 出力 137 tokens / モデル応答 3 回

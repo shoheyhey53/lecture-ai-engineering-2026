@@ -1,0 +1,17 @@
+[server] glossary: コマンドで起動（uv run python -m app.mcp_server）
+[server] fetch: コマンドで起動（uvx mcp-server-fetch==2026.11.11 --no-readability-js）
+[server] aws: URL に接続（https://knowledge-mcp.global.api.aws）
+[model] gemini-3.5-flash-lite
+[tools] MCP サーバー（app/mcp_servers.json）
+第2回の確認クイズをお届けします！ぜひ考えてみてくださいね。
+
+**【確認クイズ（第2回）】**
+* **問題:** LoRAでは元のモデルの重みと追加の行列をそれぞれどう扱いますか？
+* **答え:** 元の重みを固定し、小さな追加行列を学習します。
+
+（関連する回：第2回）
+
+--- trace ---
+[tool call]   glossary_make_quiz({'lecture': 2})
+[tool return] glossary_make_quiz -> 問題: LoRAでは元のモデルの重みと追加の行列をそれぞれどう扱いますか？ 答え: 元の重みを固定し、小さな追加行列を学習します。…
+[usage] 入力 5,617 tokens / 出力 99 tokens / モデル応答 2 回
