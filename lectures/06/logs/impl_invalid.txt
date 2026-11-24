@@ -1,0 +1,13 @@
+[server] glossary: コマンドで起動（uv run python -m app.mcp_server）
+[server] fetch: コマンドで起動（uvx mcp-server-fetch==2026.11.11 --no-readability-js）
+[server] aws: URL に接続（https://knowledge-mcp.global.api.aws）
+[model] gemini-3.5-flash-lite
+[tools] MCP サーバー（app/mcp_servers.json）
+第99回のクイズは作成できません。この講座で利用できるのは**第1〜3回**までです。
+
+第1回〜第3回の中で、クイズを作成したい回を指定していただければ、その回の確認クイズを作成いたします。何回目のクイズをご希望でしょうか？
+
+--- trace ---
+[tool call]   glossary_make_quiz({'lecture': 99})
+[tool return] glossary_make_quiz -> 第99回のクイズはありません。利用できるのは第1〜3回です。…
+[usage] 入力 5,582 tokens / 出力 80 tokens / モデル応答 2 回

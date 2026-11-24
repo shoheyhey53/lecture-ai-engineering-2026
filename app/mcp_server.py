@@ -28,6 +28,20 @@ server = MCPServer(
 server.tool()(tools.search_glossary)
 
 # TODO(宿題・基礎): get_lecture_summary も公開しよう
+server.tool()(tools.get_lecture_summary)
+
+
+@server.tool()
+def make_quiz(lecture: int) -> str:
+    """指定した講義回の確認クイズを1問返す。第1〜3回に対応し、範囲外は案内を返す。"""
+    quizzes = {
+        1: "問題: AIの回答の品質を調べるには何を行いますか？ 答え: 評価用の質問と基準を用いて確かめます。",
+        2: "問題: LoRAでは元のモデルの重みと追加の行列をそれぞれどう扱いますか？ 答え: 元の重みを固定し、小さな追加行列を学習します。",
+        3: "問題: エージェントはツールの実行結果を得た後に何をしますか？ 答え: 結果を読み、必要なら再びツールを呼ぶか回答を作ります。",
+    }
+    if lecture not in quizzes:
+        return f"第{lecture}回のクイズはありません。利用できるのは第1〜3回です。"
+    return quizzes[lecture]
 
 
 def main() -> None:
